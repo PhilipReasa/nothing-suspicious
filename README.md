@@ -3,9 +3,13 @@
 ## About
 
 Author: Philip Reasa
+
 This is a quick Next.js app that displays country data.
+
 I choose to use Next.js because I wanted to learn a new framework.
-The only "extra" thing I did was made the table responsive on smaller screens
+
+The only "extra" thing I did was made the table responsive on smaller screens.
+
 I did have some fun with styling, but ultimately - Im not a designer so sorry it looks bad.
 
 ## Getting Started
