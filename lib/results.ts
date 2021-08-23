@@ -1,3 +1,7 @@
+/**
+ * A Useful type for easily referencing both the success and failure values of a response.
+ * Kind of like a promise that is safe to `await` on and does not have to be .then/.catch chained
+ */
 export namespace Result {
   interface SuccessType<S> {
     type: "SUCCESS";

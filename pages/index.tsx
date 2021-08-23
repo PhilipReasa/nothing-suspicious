@@ -14,10 +14,15 @@ const Home: NextPage = () => {
   const [apiData, setApiData] = React.useState<CountryResponse | null>(null);
   const [errorMessage, setErrorMessage] = React.useState<string | null>(null);
 
+  // Utility to always clear api data when setting the error message
+  const error = (message: string) => {
+    setErrorMessage(message);
+    setApiData(null);
+  };
+
   const search = async (searchString: string) => {
     if (searchString.length === 0) {
-      setErrorMessage("Search String Required");
-      setApiData(null);
+      error("Search String Required");
       return;
     }
 
@@ -28,15 +33,12 @@ const Home: NextPage = () => {
     );
 
     if (Result.isFailure(result)) {
-      setErrorMessage("Something went wrong");
-      setApiData(null);
+      error("Something went wrong");
       return;
     }
 
     if (result.value.data.countries.length === 0) {
-      setErrorMessage("No Results");
-      setApiData(null);
-      [];
+      error("No Results");
       return;
     }
 
