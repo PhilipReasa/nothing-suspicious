@@ -1,0 +1,24 @@
+@import "shared";
+
+.header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px $blue;
+  margin-bottom: 20px;
+}
+
+.headerContainer {
+  height: 100%;
+  width: $maxPageWidth;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 90px;
+}

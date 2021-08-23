@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0px;
+  border: 0px;
+}
+
+.note {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.grow {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}

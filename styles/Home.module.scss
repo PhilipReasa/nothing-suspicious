@@ -1,0 +1,8 @@
+@import "shared";
+
+.content {
+  max-width: $maxPageWidth;
+  width: 100%;
+  margin: 0 auto; // Centers the content in the page
+  padding: 0px 10px; // Prevents data from hitting edges of small screens
+}

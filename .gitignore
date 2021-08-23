@@ -1,0 +1,6 @@
+# Dev Env stuff
+node_modules/
+.next/
+
+# Mac Stuff
+.DS_Store
