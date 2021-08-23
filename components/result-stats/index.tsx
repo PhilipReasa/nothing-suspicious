@@ -14,11 +14,13 @@ export default function ResultStats({
   return (
     <div className={styles.stats}>
       <div className="flex-row">
-        <div className="note">Total Countries Displayed: </div>
+        <div className={`${styles.label} note`}>
+          Total Countries Displayed:{" "}
+        </div>
         <div>{countryCount}</div>
       </div>
       <div className="flex-row">
-        <div className="note">Regions: </div>
+        <div className={`${styles.label} note`}>Regions: </div>
         <div>
           {Object.entries(regionStats).map(([name, count]) => (
             <span className={styles.resultDataPiece} key="name">
@@ -28,7 +30,7 @@ export default function ResultStats({
         </div>
       </div>
       <div className="flex-row">
-        <div className="note">SubRegions: </div>
+        <div className={`${styles.label} note`}>SubRegions: </div>
         <div>
           {Object.entries(subRegionStats).map(([name, count]) => (
             <span className={styles.resultDataPiece} key="name">
